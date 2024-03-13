@@ -2,21 +2,21 @@ language: node_js
 os:
  - linux
 node_js:
- - "11.12"
- - "10.15"
+#  - "11.12"
+#  - "10.15"
  - "9.11"
- - "8.15"
- - "7.10"
- - "6.17"
- - "5.12"
- - "4.9"
- - "iojs-v3.3"
- - "iojs-v2.5"
- - "iojs-v1.8"
- - "0.12"
- - "0.10"
- - "0.8"
- - "0.6"
+#  - "8.15"
+#  - "7.10"
+#  - "6.17"
+#  - "5.12"
+#  - "4.9"
+#  - "iojs-v3.3"
+#  - "iojs-v2.5"
+#  - "iojs-v1.8"
+#  - "0.12"
+#  - "0.10"
+#  - "0.8"
+#  - "0.6"
 before_install:
  - 'case "${TRAVIS_NODE_VERSION}" in 0.*) export NPM_CONFIG_STRICT_SSL=false ;; esac'
  - 'nvm install-latest-npm'
@@ -284,4 +284,4 @@ matrix:
     - env: TEST=true ALLOW_FAILURE=true
     - node_js: "0.6" # temporarily allow this to fail
     - env: COVERAGE=true # temporarily allow this to fail
-dist: trusty
+# dist: trusty
