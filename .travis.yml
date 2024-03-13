@@ -280,8 +280,8 @@ env:
     # - node_js: "0.4"
     #   env: TEST=true ALLOW_FAILURE=true
   #  allow_failures:
-  #   - os: osx
-  #   - env: TEST=true ALLOW_FAILURE=true
-    # - node_js: "0.6" # temporarily allow this to fail
-    # - env: COVERAGE=true # temporarily allow this to fail
+    - os: osx
+    - env: TEST=true ALLOW_FAILURE=true
+    - node_js: "0.6" # temporarily allow this to fail
+    - env: COVERAGE=true # temporarily allow this to fail
 # dist: trusty
