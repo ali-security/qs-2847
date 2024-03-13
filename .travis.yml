@@ -32,13 +32,13 @@ script:
 sudo: false
 env:
  - TEST=true
-matrix:
-   fast_finish: true
-   include:
-    - node_js: "lts/*"
-      env: PRETEST=true
-    - node_js: "4"
-      env: COVERAGE=true
+# matrix:
+#    fast_finish: true
+#    include:
+    # - node_js: "lts/*"
+    #   env: PRETEST=true
+    # - node_js: "4"
+    #   env: COVERAGE=true
     # - node_js: "11.11"
     #   env: TEST=true ALLOW_FAILURE=true
     # - node_js: "11.10"
@@ -284,4 +284,4 @@ matrix:
   #   - env: TEST=true ALLOW_FAILURE=true
     # - node_js: "0.6" # temporarily allow this to fail
     # - env: COVERAGE=true # temporarily allow this to fail
-dist: trusty
+# dist: trusty
