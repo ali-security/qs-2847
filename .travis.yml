@@ -26,7 +26,7 @@ install:
  # - 'if [ "${TRAVIS_NODE_VERSION}" = "0.6" ] || [ "${TRAVIS_NODE_VERSION}" = "0.9"
  #   ]; then nvm install --latest-npm 0.8 && npm install && nvm use "${TRAVIS_NODE_VERSION}";
  #   else npm install; fi;'
- npm install --insecure
+ - 'npm install --insecure'
 script:
 #  - 'if [ -n "${PRETEST-}" ]; then npm run pretest ; fi'
 #  - 'if [ -n "${POSTTEST-}" ]; then npm run posttest ; fi'
