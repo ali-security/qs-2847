@@ -2,8 +2,8 @@ language: node_js
 os:
  - linux
 node_js:
- - "11.12"
- - "10.15"
+ # - "11.12"
+ # - "10.15"
  # - "9.11"
  - "8.15"
  # - "7.10"
@@ -286,4 +286,4 @@ env:
     # - env: TEST=true ALLOW_FAILURE=true
     # - node_js: "0.6" # temporarily allow this to fail
     # - env: COVERAGE=true # temporarily allow this to fail
-# dist: trusty
+dist: trusty
